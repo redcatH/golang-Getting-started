@@ -1,0 +1,15 @@
+
+@url=http://localhost:8080
+
+###获取
+GET {{url}}/albums HTTP/1.1
+
+###获取特定
+@id=4
+GET {{url}}/albums/{{id}} HTTP/1.1
+
+###增加
+POST {{url}}/albums
+Content-Type: application/json
+
+{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}
